@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modalWindow</title>
+    <link rel="stylesheet" href="modalW.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="modalW.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="red">
+        <a href="#" class="btna">Open modal window</a>
+        <div class="bg">
+            <div class="modalW">
+                <div class="modalW-header">
+                    Lorem ipsum dolor?
+                </div>
+                <div class="modalW-body">
+                    <textarea type="text" class="modalW-input" id="in" cols="30" rows="10"></textarea>
+                </div>
+                <div class="modalW-footer">
+                    <button class="btn close"><span>&times;</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="green">
+        <div class="contentBtn">
+            <button data-type="glass" class="butt active">Очки</button>
+            <button data-type="cap" class="butt">Кепка</button>
+            <button data-type="bandana" class="butt">Бандана</button>
+        </div>
+        <div class="content glass active1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, atque totam! Error tempore deserunt iure aspernatur facere dolorum beatae assumenda, explicabo voluptatem et earum saepe possimus perferendis iusto obcaecati eum!
+        </div>
+        <div class="content cap ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed placeat repellat asperiores harum aliquam quidem possimus deserunt praesentium? Enim autem non nam officiis dolorum aliquid eum sequi, labore aut! Adipisci?
+        </div>
+        <div class="content bandana">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque repellendus soluta in optio assumenda molestiae doloremque necessitatibus vitae quisquam, reiciendis laboriosam, quas minima porro illum unde! Quod veritatis corrupti ipsam.
+        </div>
+    </section>
+
+    <section class="blue">
+        <div class="forms">
+            <div class="b cont">
+                <label for="count">Количество человек</label>
+                <input type="text" data-type="count" class="forms-input count" id="count" value="1" maxlength="3">
+            </div>
+            <div class="b durability">
+                <span>Кто будет на вечеринке</span>
+                <button data-type="man" class="butt v active" value="2" id="man">Мужчины</button>
+                <button data-type="woman" class="butt v" value="1" id="woman">Женщины</button>
+            </div>
+            <div class="b day">
+                <label for="day">Сколько дней нужно чтобы пить не перествая</label>
+                <input type="text" data-type="day" class="forms-input day" id="day" value="1" maxlength="3">
+            </div>
+            <div class="b btnSpirit">
+                <span>Напитки на вечеринке</span>
+                <button data-type="vodka" class="butt v active" value="1">Водка</button>
+                <button data-type="beer" class="butt v" value="10">Пиво</button>
+            </div>
+            <div class="b answer">
+                <button class="add">Посчитать</button>
+                <p>Надо <span id="coutnSpirit">1</span> бутылка <span id="spirit">водки</span></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

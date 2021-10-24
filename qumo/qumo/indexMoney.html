@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Сайт о создании сайтов"> 
+    <meta name="Keywords" content="Quality and Modern, создание сайтов, разработка сайтов, вёрстка, хороший дизайн сайта"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Таблица цен</title>
+    <link rel="shortcut icon" href="../qm/img/brouslogo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="contein">
+        <div class="application">
+          <div class="mainDesc mtop">
+            <p class="mainDesc-p">Оформление заявки</p>
+        </div>
+          <button class="application-btn">&times;</button>
+          <form id="contact" action="sendteleg.php" method="POST">
+              <div class="formContent">
+                  <div class="formContent-desc">
+                      <div class="formContent-item">
+                          <fieldset>
+                            <input name="name" type="text" class="formContent-item-name" id="name" placeholder="Имя" required="">
+                          </fieldset>
+                        </div>
+                        <div class="formContent-item">
+                          <fieldset>
+                            <input name="email" type="email" class="formContent-item-email" id="email" placeholder="E-Mail Адрес" required="">
+                          </fieldset>
+                        </div>
+                  </div>
+                <div class="formContent-item">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="formContent-item-message" id="message" placeholder="Описание вашего заказа" required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="formContent-btn">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button col">Отправить сообщение</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    <section class="money">
+        <div class="wrapperr">
+            <div class="mainBar">
+                <a href="indexMain.html" class="mainBar-img"><img src="../qm/img/mainlogo.svg" alt="" class="mainBar-img"></a>
+                <nav>
+                    <ul class="mainBar-menu">
+                        <li><a aria-label="ggfjbv" class="link" href="indexAbout.html">О нас</a></li>
+                        <li><a class="link" href="indexProcess.html">Процесс работы</a></li>
+                        <!-- <li><a class="link" href="indexReviews.html">Отзывы</a></li> -->
+                        <li><a class="link" href="indexMoney.html">Таблица цен</a></li>
+                        <li><a class="link" href="indexExamples.html">Примеры работ</a></li>
+                        <li><a class="link s" href="tel:+7(999)457-86-65" ><img class="mainBar-menu-img ming" src="../qm/img/телефон.svg" alt=""><span>+7 (999) 457-86-65</span></a></li>
+                        <li><a class="link mr" href="#"><strong class="app">Заявка</strong></a></li>
+                    </ul>
+                </nav>
+                <div class="burgerMenu">
+                  <span class="burgerMenu-span1"></span>
+                  <span class="burgerMenu-span2"></span>
+                  <span class="burgerMenu-span3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="burgerMenu-vis">
+          <ul class="burgerMenu-vis-ul">
+            <li><a  href="indexAbout.html">О нас</a></li>
+             <li><a href="indexProcess.html">Процесс работы</a></li>
+            <!-- <li><a class="link" href="indexReviews.html">Отзывы</a></li> -->
+            <li><a href="indexMoney.html">Таблица цен</a></li>
+            <li><a href="indexExamples.html">Примеры работ</a></li>
+            <li><a href="#" class="appl">Заявка</a></li>
+            <li><button class="burgerMenu-vis-ul-btn">&times;</button></li>
+          </ul>
+        </div>
+        <div class="moneyContent-item-side" id="vis">
+            <div class="block">
+                <button class="btnVisit">&times;</button>
+                <div class="moneyContent-item-side-desc">Сайт-визитка — небольшой сайт, состоящий из одной (или нескольких) веб-страниц и содержащий основную информацию об организации, частном лице, компании, товарах или услугах.</div>
+                 <ul class="moneyContent-item-ul">
+                     <li>Модуль «Форма обратной связи»</li>
+                     <li>Готовый дизайн сайта</li>
+                     <li>Кнопки социальных сетей "Поделиться"</li>
+                     <li>Адаптивность к мобильным устройствам</li>
+                     <li>Копирайтинг и наполнение 1 страницы</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="moneyContent-item-side" id="lan">
+            <div class="block">
+                <button class="btnLan">&times;</button>
+                <div class="moneyContent-item-side-desc">Landing page — веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге.</div>
+                <ul class="moneyContent-item-ul">
+                    <li>Интерактивные блоки</li>
+                    <li>Наполнение галерии/каталога</li>
+                    <li>До 9 блоков на выбор</li>
+                    <li>CMS система управления сайтом</li>
+                    <li>Кнопки социальных сетей "Поделиться"</li>
+                </ul>
+            </div>
+        </div>
+        <div class="moneyContent-item-side" id="prom">
+            <div class="block">
+                <button class="btnProm">&times;</button>
+                <div class="moneyContent-item-side-desc">Промо-сайт - инструмент продвижения продукта/услуги/имиджа компании в сети Интернет, который воздействует на определенную часть целевой аудитории.</div>
+                <ul class="moneyContent-item-ul">
+                    <li>Модуль «Каталог»</li>
+                    <li>Модуль «Галерея»</li>
+                    <li>Копирайтинг до 7 блоков</li>
+                    <li>Наполнение галерии/каталога</li>
+                    <li>Адаптивность к мобильным устройствам</li>
+                </ul>
+            </div>
+        </div>
+        <div class="moneyContent-item-side" id="serv">
+            <div class="block">
+                <button class="btnServ">&times;</button>
+                <div class="moneyContent-item-side-desc">Сай для услуг — небольшой сайт, включающий в себя ваши услуги. </div>
+                <ul class="moneyContent-item-ul">
+                    <li>Готовая адаптивная версия сайта</li>
+                    <li>Наполнение (тексты и изображения)</li>
+                    <li>Модуль «Отзывы»</li>
+                    <li>Модуль «Форма обратной связи»</li>
+                    <li>Выпадающее меню</li>
+                    <li>Наполнение раздела «Услуги»</li>
+                </ul>
+            </div>
+        </div>
+        <div class="moneyContent-item-side" id="katal">
+            <div class="block">
+                <button class="btnKatal">&times;</button>
+                <div class="moneyContent-item-side-desc">Сайт каталог — вид коммерческого сайта, на котором представленвесь ассортимент с подробным описанием. Прекрасный способ проинформировать покупателей о своих услугах. Такой сайт ещё называют витриной.</div>
+                <ul class="moneyContent-item-ul">
+                    <li>Готовая адаптивная версия сайта</li>
+                    <li>Модули «Форма обратной связи»</li>
+                    <li>Выпадающее меню</li>
+                    <li>Кнопки социальных сетей</li>
+                     <li>Наполнение контентом раздела «Каталог»</li>
+                    <li>Страница товара</li>
+                </ul>
+            </div>
+        </div>
+        <div class="moneyContent-item-side" id="net">
+            <div class="block">
+                <button class="btnNet">&times;</button>
+                <div class="moneyContent-item-side-desc">Сайт-визитка — небольшой сайт, состоящий из одной (или нескольких) веб-страниц и содержащий основную информацию об организации, частном лице, компании, товарах или услугах.</div>
+                <ul class="moneyContent-item-ul">
+                    <li>Массовая загрузка товаров</li>
+                    <li>Опции товара, с передачей в корзину</li>
+                    <li>Характеристики товара</li>
+                    <li>Фильтрация товаров</li>
+                    <li>Слайд-шоу</li>
+                </ul>
+            </div>
+        </div>
+            <div class="moneyTrack">
+                <div class="moneyContent">
+                    <div class="moneyContent-item money1 monimg">
+                        <div class="moneyContent-item-our">
+                            <p class="moneyContent-item-header">Сайт-визитка</p>
+                            <div class="moneyContent-item-body">
+                                <span class="moneyContent-item-body-pr">от 4800 ₽</span>
+                            </div>
+                            <button class="moneyContent-item-btn vis">Подробнее</button>
+                        </div>
+
+                    </div>
+                    <div class="moneyContent-item money2 monimg">
+                        <div class="moneyContent-item-our">
+                            <p class="moneyContent-item-header">Промо-сайт</p>
+                            <div class="moneyContent-item-body">
+                                <span class="moneyContent-item-body-pr">от 8900 ₽</span>
+                            </div>
+                            <button class="moneyContent-item-btn prom">Подробнее</button>
+                        </div>
+
+                    </div>
+                    <div class="moneyContent-item money3 monimg">
+                        <div class="moneyContent-item-our">
+                            <p class="moneyContent-item-header">Лендинг</p>
+                            <div class="moneyContent-item-body">
+                                <span class="moneyContent-item-body-pr"> от 12000 ₽</span>
+                            </div>
+                            <button class="moneyContent-item-btn lan">Подробнее</button>
+                        </div>
+
+                    </div>
+                    <div class="moneyContent-item money4 monimg">
+                        <div class="moneyContent-item-our">
+                            <p class="moneyContent-item-header">Сайт для услуг</p>
+                            <div class="moneyContent-item-body">
+                                <span class="moneyContent-item-body-pr">от 14000 ₽</span>
+                            </div>
+                            <button class="moneyContent-item-btn serv">Подробнее</button>
+                        </div>
+
+                    </div>
+                    <div class="moneyContent-item money5 monimg">
+                        <div class="moneyContent-item-our">
+                            <p class="moneyContent-item-header">Сайт с каталогами</p>
+                            <div class="moneyContent-item-body">
+                                <span class="moneyContent-item-body-pr">от 21000 ₽</span>
+                            </div>
+                            <button class="moneyContent-item-btn katal">Подробнее</button>
+                        </div>
+
+                    </div>
+                    <div class="moneyContent-item money6 monimg">
+                        <div class="moneyContent-item-our">
+                            <p class="moneyContent-item-header">Интернет-магазин</p>
+                            <div class="moneyContent-item-body">
+                                <span class="moneyContent-item-body-pr">от 26900 ₽</span>
+                            </div>
+                            <button class="moneyContent-item-btn net">Подробнее</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <button class="prev">
+                    <span class="prev-arrow"></span>
+                </button>
+                <button class="next">
+                    <span class="next-arrow"></span>
+                </button>
+    </section>
+    <section class="price">
+        <div class="price-treang1"></div>
+        <div class="price-treang2"></div>
+        <div class="wrapper">
+            <div class="priceContent">
+
+                <p class="priceContent-header">От чего зависит цена сайта?</p>
+                <ul class="priceContent-ul">
+                    <li>Объемы и сложность проекта и профильной тематики</li>
+                    <li>Есть ли адаптивность для мобильных устройств</li>
+                    <li>Будет ли предоставлена контент, который будет на сайте</li>
+                    <li>Создание логотипа</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-con">
+          <p class="footer-p">&copy;2021 Веб-студия &laquo;Quality and Modern&raquo;</p>
+        </div>
+</section>
+</body>
+</html>

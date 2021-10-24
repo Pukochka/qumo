@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg {
+  position: fixed;
+  background-color: rgba(58, 58, 58, 0.596);
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalW {
+  width: 500px;
+  height: 400px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalW-body {
+  width: 450px;
+  height: 200px;
+  font-size: 93%;
+  background-color: #fff3e1;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.modalW-input {
+  width: 450px;
+  height: 500px;
+  overflow: scroll;
+  border: none;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.red {
+  background-color: #282828;
+}
+
+.green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #282828;
+}
+
+.blue {
+  background-color: #282828;
+}
+
+.butt {
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.butt + .butt {
+  margin-left: 40px;
+}
+
+.active {
+  border-bottom: 2px solid #ffffff;
+}
+
+.contentBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  padding-top: 40px;
+  max-width: 1110px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.glass,
+.cap,
+.bandana {
+  display: none;
+}
+
+.glass {
+  color: yellow;
+}
+
+.cap {
+  color: goldenrod;
+}
+
+.bandana {
+  color: greenyellow;
+}
+
+.active1 {
+  display: inline-block;
+  max-width: 1110px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.b + .b {
+  margin-top: 40px;
+}
+
+.forms-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.cont, .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.v {
+  margin-left: 30px;
+}
+
+.answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 20px;
+  margin-right: 20px;
+  background: none;
+  border: none;
+}
+
+.add:hover {
+  background-color: #4d4d4d;
+}
+/*# sourceMappingURL=modalW.css.map */

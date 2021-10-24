@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Отзывы</title>
+    <link rel="shortcut icon" href="../qm/img/brouslogo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="contein">
+        <div class="application">
+          <div class="mainDesc mtop">
+            <p class="mainDesc-p">Оформление заявки</p>
+        </div>
+          <button class="application-btn">&times;</button>
+          <form id="contact" action="sendteleg.php" method="POST">
+              <div class="formContent">
+                  <div class="formContent-desc">
+                      <div class="formContent-item">
+                          <fieldset>
+                            <input name="name" type="text" class="formContent-item-name" id="name" placeholder="Имя" required="">
+                          </fieldset>
+                        </div>
+                        <div class="formContent-item">
+                          <fieldset>
+                            <input name="email" type="email" class="formContent-item-email" id="email" placeholder="E-Mail Адрес" required="">
+                          </fieldset>
+                        </div>
+                  </div>
+                <div class="formContent-item">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="formContent-item-message" id="message" placeholder="Описание вашего заказа" required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="formContent-btn">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button col">Отправить сообщение</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    <section class="reviews">
+        <div class="wrapper">
+            <div class="conteiner">
+                <div class="mainBar">
+                    <a href="indexMain.html" class="mainBar-img">
+                        <img src="../qm/img/mainlogo.svg" alt="" class="mainBar-img">
+                    </a>
+                    <nav>
+                        <ul class="mainBar-menu">
+                            <li><a class="link" href="indexAbout.html">О нас</a></li>
+                            <li><a class="link" href="indexProcess.html">Процесс работы</a></li>
+                            <!-- <li><a class="link" href="indexReviews.html">Отзывы</a></li> -->
+                            <li><a class="link" href="indexMoney.html">Таблица цен</a></li>
+                            <li><a class="link" href="indexExamples.html">Примеры работ</a></li>
+                            <li><a class="link s" href="tel:+7(999)457-86-65" ><img class="mainBar-menu-img ming" src="../qm/img/телефон.svg" alt=""><span>+7 (999) 457-86-65</span></a></li>
+                            <li><a class="link mr" href="#"><strong class="app">Заявка</strong></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+      <div class="footer-con">
+        <p class="footer-p">&copy;2021 Веб-студия &laquo;Quality and Modern&raquo;</p>
+      </div>
+</section>
+</body>
+</html>

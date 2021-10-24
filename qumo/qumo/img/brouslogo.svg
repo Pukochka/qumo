@@ -1,0 +1,17 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="34" width="34" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke="#000" transform="rotate(-0.07816972583532333 289.9848327636755,188.8946533203082) " stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="288.662004" x2="174.026455" y1="89.127308" x1="405.94324" stroke-width="1.5" fill="none"/>
+  <ellipse stroke="#e03535" ry="15.099012" rx="15.181519" id="svg_17" cy="15.972496" cx="15.972497" fill-opacity="null" stroke-opacity="0.91" stroke-width="1.5" fill="none"/>
+  <text stroke="#db7777" transform="matrix(1,0,0,1.2397445440292358,0,1.8430361822247505) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_18" y="14.066557" x="15.257426" fill-opacity="null" stroke-opacity="0.91" stroke-width="0" fill="#000000"/>
+  <text stroke="#db7777" transform="matrix(0.9394025859519956,0,0,1,-13.562611082291594,5.720572471618652) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_19" y="18.605482" x="22.140171" fill-opacity="null" stroke-opacity="0.91" stroke-width="0" fill="#000000">Q</text>
+ </g>
+</svg>

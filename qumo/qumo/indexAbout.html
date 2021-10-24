@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт о создании сайтов"> 
+    <meta name="Keywords" content="Quality and Modern, создание сайтов, разработка сайтов, вёрстка, хороший дизайн сайта"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../qm/img/brouslogo.svg" type="image/x-icon">
+    <title>О нас</title>
+</head>
+<body>
+    <div class="contein">
+        <div class="application">
+          <div class="mainDesc mtop">
+            <p class="mainDesc-p">Оформление заявки</p>
+        </div>
+          <button class="application-btn">&times;</button>
+          <form id="contact" action="sendteleg.php" method="POST">
+              <div class="formContent">
+                  <div class="formContent-desc">
+                      <div class="formContent-item">
+                          <fieldset>
+                            <input name="name" type="text" class="formContent-item-name" id="name" placeholder="Имя" required="">
+                          </fieldset>
+                        </div>
+                        <div class="formContent-item">
+                          <fieldset>
+                            <input name="email" type="email" class="formContent-item-email" id="email" placeholder="E-Mail Адрес" required="">
+                          </fieldset>
+                        </div>
+                  </div>
+                <div class="formContent-item">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="formContent-item-message" id="message" placeholder="Описание вашего заказа" required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="formContent-btn">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button col">Отправить сообщение</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    <section class="about">
+        <div class="wrapperr">
+            <div class="mainBar">
+                <a href="indexMain.html" class="mainBar-img"><img src="../qm/img/mainlogo.svg" alt="" class="mainBar-img"></a>
+                <nav>
+                    <ul class="mainBar-menu">
+                        <li><a aria-label="ggfjbv" class="link" href="indexAbout.html">О нас</a></li>
+                        <li><a class="link" href="indexProcess.html">Процесс работы</a></li>
+                        <!-- <li><a class="link" href="indexReviews.html">Отзывы</a></li> -->
+                        <li><a class="link" href="indexMoney.html">Таблица цен</a></li>
+                        <li><a class="link" href="indexExamples.html">Примеры работ</a></li>
+                        <li><a class="link s" href="tel:+7(999)457-86-65" ><img class="mainBar-menu-img ming" src="../qm/img/телефон.svg" alt=""><span>+7 (999) 457-86-65</span></a></li>
+                        <li><a class="link mr" href="#"><strong class="app">Заявка</strong></a></li>
+                    </ul>
+                </nav>
+                <div class="burgerMenu">
+                  <span class="burgerMenu-span1"></span>
+                  <span class="burgerMenu-span2"></span>
+                  <span class="burgerMenu-span3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="burgerMenu-vis">
+          <ul class="burgerMenu-vis-ul">
+            <li><a  href="indexAbout.html">О нас</a></li>
+             <li><a href="indexProcess.html">Процесс работы</a></li>
+            <!-- <li><a class="link" href="indexReviews.html">Отзывы</a></li> -->
+            <li><a href="indexMoney.html">Таблица цен</a></li>
+            <li><a href="indexExamples.html">Примеры работ</a></li>
+            <li><a href="#" class="appl">Заявка</a></li>
+            <li><button class="burgerMenu-vis-ul-btn">&times;</button></li>
+          </ul>
+        </div>
+        <div class="wrapper">
+            <div class="aboutConteiner">
+                <div class="aboutConteiner-desc">
+                    <div class="aboutConteiner-inner">
+                        <p class="aboutConteiner-p1">
+                             Веб-студия &laquo;Quality and Modern&raquo; начала свою работу совсем недавно, но уже имеет внушительный опыт по верстке и дизайну сайтов. Q&M предоставляет свои услуги по самым низким ценам на рынке.
+                        </p>
+                    </div>
+                    
+                    <img class="aboutConteiner-desc-img2" src="../qm/img/macboock.webp" alt="">
+                </div>
+                <p class="aboutConteiner-p2">
+                    Веб-студия &laquo;Quality and Modern&raquo; предоставляет услуги по следующим принципам
+                </p>
+            </div>
+            <div class="aboutContent">
+                <div class="aboutContent-item">
+                    <div class="aboutContent-item-img">
+                        <img src="../qm/img/about1.svg" alt="" class="aboutContent-item-img1">
+                    </div>
+                    <p class="aboutContent-item-p1">Отдельный подход к кажому клиенту</p>
+                    <p class="aboutContent-item-p2">Рассмотрим Ваши пожелания и предложим свои решения</p>
+                </div>
+                <div class="aboutContent-item">
+                    <div class="aboutContent-item-img">
+                        <img src="../qm/img/tech.svg" alt="" class="aboutContent-item-img1">
+                    </div>
+                    <p class="aboutContent-item-p1">Применение современных методов для решения задач</p>
+                    <p class="aboutContent-item-p2">Используем последние технологии для создания сайтов</p>
+                </div>
+                <div class="aboutContent-item">
+                    <div class="aboutContent-item-img">
+                        <img src="../qm/img/tool.svg" alt="" class="aboutContent-item-img1">
+                    </div>
+                    <p class="aboutContent-item-p1">Окончательное решение за вами</p>
+                    <p class="aboutContent-item-p2">Свяжитесь с нами, если у вас есть какие-либо вопросы</p>
+                </div>
+            </div>
+            <div class="question">
+                <div class="question-header">
+                    <p class="question-header-p">Часто задаваемые вопросы</p>
+                </div>
+                <div class="question-item">
+                    <div class="question-item-box">
+                        <p class="question-item-box-p">От чего зависит стоимость сайта?</p>
+                        <div class="question-item-box-plus" id="price">
+                            <div class="question-item-box-plus-after" id="aftPr"></div>
+                            <div class="question-item-box-plus-before"></div>
+                        </div>
+                    </div>
+                    <div class="question-item-box-add" id="priceAdd">
+                        <p class="question-item-box-add-p">Стоимость создания сайта зависит от масштабов сайта и технических требований к функционалу. Каждый сайт индивидуален и требует расчёта. Для его получения оставьте заявку через форму.</p>
+                    </div>
+                    <div class="br"></div>
+                </div>
+                <div class="question-item">
+                    <div class="question-item-box">
+                        <p class="question-item-box-p">Сколько времени разрабатывается сайт?</p>
+                        <div class="question-item-box-plus" id="how">
+                            <div class="question-item-box-plus-after" id="aftHow"></div>
+                            <div class="question-item-box-plus-before"></div>
+                        </div>
+                    </div>
+                    <div class="question-item-box-add" id="howAdd">
+                        <p class="question-item-box-add-p">Максимальный срок создания сайта — 45 рабочих дней. Небольшие сайты могут быть готовы уже через 3-4 дня. Точный срок создания сайта будет указан в договоре.</p>
+                    </div>
+                    <div class="br"></div>
+                </div>
+                <div class="question-item">
+                    <div class="question-item-box">
+                        <p class="question-item-box-p">Как происходит оплата?</p>
+                        <div class="question-item-box-plus" id="pay">
+                            <div class="question-item-box-plus-after" id="aftPay"></div>
+                            <div class="question-item-box-plus-before"></div>
+                        </div>
+                    </div>
+                    <div class="question-item-box-add" id="payAdd">
+                        <p class="question-item-box-add-p">Оплатить договор вы можете на расчётный счёт. Счёт для оплаты мы предоставим.</p>
+                    </div>
+                    <div class="br"></div>
+                </div>
+                <div class="question-item">
+                    <div class="question-item-box">
+                        <p class="question-item-box-p">Нужна ли предоплата?</p>
+                        <div class="question-item-box-plus" id="prePay">
+                            <div class="question-item-box-plus-after" id="aftPre"></div>
+                            <div class="question-item-box-plus-before"></div>
+                        </div>
+                    </div>
+                    <div class="question-item-box-add" id="prePayAdd">
+                        <p class="question-item-box-add-p">Предоплата составляет 30%. Оставшуюся часть суммы вы оплачиваете после подписания акта об оказании услуг.</p>
+                    </div>
+                    <div class="br"></div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class="footer">
+        <div class="footer-con">
+          <p class="footer-p">&copy;2021 Веб-студия &laquo;Quality and Modern&raquo;</p>
+        </div>
+</section>
+</body>
+</html>
