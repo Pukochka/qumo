@@ -308,21 +308,28 @@ $(function(){
                     e.preventDefault();
                     $('.burgerMenu-vis').removeClass('burgerMenuAct');
                 });
-
-
-
-                const num =$('.jobs');
-
-                тгью
-                
-
-                
-
-                
-
-                $('.examplesClient-content-item-number').counterUp({
-                    delay: 10,
-                    time:1500
-                });
                          
 });
+document.addEventListener('DOMContentLoaded',function(){
+    const nums = document.querySelectorAll('.examplesClient-content-item-number');
+    const speed = 200000;
+
+    nums.forEach(num => { 
+        const updateCount = () =>{
+            const target = +num.getAttribute('data-target');
+            const count = +num.innerText;
+
+            const inc = target / speed;
+
+            if(count < target){
+                num.innerText = Math.ceil(count + inc);
+                setTimeout(updateCount, 100);
+            }else{
+                count.innerText = target;
+            }
+
+        }
+        updateCount();
+    });
+     
+});    

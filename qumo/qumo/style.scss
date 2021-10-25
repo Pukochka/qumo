@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5{
     padding-right: 25px;
     padding-left: 25px;
     &r{
-        background-color: $bgc;
+        background-color: #d46060;
         box-shadow: 0px 0px 65px 11px rgba(34, 60, 80, 0.43);
         position: absolute;
         width: 100vw;
@@ -51,6 +51,7 @@ h1,h2,h3,h4,h5{
     transform: translateY(0)!important;
     visibility: visible !important;
     position: fixed !important;
+    opacity: 1 !important;
     z-index: 300;
     width: 100%;
 }
@@ -70,8 +71,9 @@ h1,h2,h3,h4,h5{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(129, 123, 123);
+        background-color: #ce0c0c;
         visibility: hidden;
+        opacity: 0;
         transform: translateY(-100%);
         &::after{
             position: absolute;
@@ -81,7 +83,7 @@ h1,h2,h3,h4,h5{
             border: 0 solid transparent;
             border-left-width: calc(100vw/2);
             border-right-width: calc(100vw/2);
-            border-top: 30px solid rgb(129, 123, 123);
+            border-top: 30px solid #ce0c0c;
             bottom: -29px;
         }
         &-ul{
@@ -283,9 +285,11 @@ p{
     visibility: hidden;
     transform: translateY(-10px);
     transition: .2s ease-in-out transform;
+    opacity: 0;
 }
 .active{
     visibility: visible;
+    opacity: 1;
     transform: translateY(0px);
 }
 .col{
@@ -350,7 +354,7 @@ input{
     color: #fff;
 }
 .formContent{
-    padding: 40px;
+    padding-top: 40px;
     &-desc{
         display: flex;
         justify-content: space-between;
@@ -364,7 +368,7 @@ input{
             font-size: 20px;
             font-weight: 300;
             outline: none;
-            width: 100%;
+            max-width: 100%;
             &::placeholder{
                 color: rgb(233, 233, 233);
                 font-size: 18px;
@@ -595,6 +599,7 @@ button{
             color: #fff;
             font-size: 32px;
             font-weight: 600;
+            text-align: center;
         }  
     }
     &-item{
@@ -775,6 +780,7 @@ button{
             transform: translateY(-10px);
             position: fixed;
             transition: .1s ease-out transform;
+            opacity: 0;
             &-desc{
                 font-size: 24px;
                 font-weight: 500;
@@ -951,6 +957,7 @@ button{
     position: fixed;
     transform: translateY(0px);
     visibility: visible;
+    opacity: 1;
 }
 .btnVisit,.btnLan,.btnProm,.btnServ,.btnKatal,.btnNet{
     position: absolute;
@@ -1619,8 +1626,31 @@ button{
     }
 }
 @media (max-width:400px) {
+    .examplesHeader-p {
+        font-size: 36px;
+        text-align: centerh;
+    }
     .block{
         margin-top: 140px;
+    }
+}
+@media (max-width:300px) {
+    .examplesContent-item{
+        flex: 0 1 230px;
+        height: 230px;
+        &-img{
+            width: 230px;
+            height: 230px;
+        }
+        &-header{
+            font-size: 36px;
+        }
+        &-wrap{
+            &-bg{
+                width: 230px;
+                height: 226px;
+            }
+        }
     }
 }
 

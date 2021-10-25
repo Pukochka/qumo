@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .wrapperr {
-  background-color: rgba(219, 119, 119, 0.911);
+  background-color: #d46060;
   -webkit-box-shadow: 0px 0px 65px 11px rgba(34, 60, 80, 0.43);
           box-shadow: 0px 0px 65px 11px rgba(34, 60, 80, 0.43);
   position: absolute;
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5 {
           transform: translateY(0) !important;
   visibility: visible !important;
   position: fixed !important;
+  opacity: 1 !important;
   z-index: 300;
   width: 100%;
 }
@@ -88,8 +89,9 @@ h1, h2, h3, h4, h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #817b7b;
+  background-color: #ce0c0c;
   visibility: hidden;
+  opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
@@ -102,7 +104,7 @@ h1, h2, h3, h4, h5 {
   border: 0 solid transparent;
   border-left-width: calc(100vw/2);
   border-right-width: calc(100vw/2);
-  border-top: 30px solid #817b7b;
+  border-top: 30px solid #ce0c0c;
   bottom: -29px;
 }
 
@@ -372,10 +374,12 @@ p {
           transform: translateY(-10px);
   -webkit-transition: .2s ease-in-out transform;
   transition: .2s ease-in-out transform;
+  opacity: 0;
 }
 
 .active {
   visibility: visible;
+  opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
@@ -469,7 +473,7 @@ input {
 }
 
 .formContent {
-  padding: 40px;
+  padding-top: 40px;
 }
 
 .formContent-desc {
@@ -490,7 +494,7 @@ input {
   font-size: 20px;
   font-weight: 300;
   outline: none;
-  width: 100%;
+  max-width: 100%;
 }
 
 .formContent-item-email::-webkit-input-placeholder, .formContent-item-name::-webkit-input-placeholder, .formContent-item-message::-webkit-input-placeholder {
@@ -833,6 +837,7 @@ button {
   color: #fff;
   font-size: 32px;
   font-weight: 600;
+  text-align: center;
 }
 
 .question-item + .question-item {
@@ -1079,6 +1084,7 @@ button {
   position: fixed;
   -webkit-transition: .1s ease-out transform;
   transition: .1s ease-out transform;
+  opacity: 0;
 }
 
 .moneyContent-item-side-desc {
@@ -1321,6 +1327,7 @@ button {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   visibility: visible;
+  opacity: 1;
 }
 
 .btnVisit, .btnLan, .btnProm, .btnServ, .btnKatal, .btnNet {
@@ -2198,8 +2205,32 @@ button {
 }
 
 @media (max-width: 400px) {
+  .examplesHeader-p {
+    font-size: 36px;
+    text-align: centerh;
+  }
   .block {
     margin-top: 140px;
+  }
+}
+
+@media (max-width: 300px) {
+  .examplesContent-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 230px;
+            flex: 0 1 230px;
+    height: 230px;
+  }
+  .examplesContent-item-img {
+    width: 230px;
+    height: 230px;
+  }
+  .examplesContent-item-header {
+    font-size: 36px;
+  }
+  .examplesContent-item-wrap-bg {
+    width: 230px;
+    height: 226px;
   }
 }
 /*# sourceMappingURL=style.css.map */
