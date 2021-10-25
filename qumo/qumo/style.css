@@ -1877,15 +1877,18 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 45px;
           column-gap: 45px;
   row-gap: 45px;
 }
 
 .examplesContent-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 370px;
-          flex: 1 1 370px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 370px;
+          flex: 0 1 370px;
   height: 370px;
   position: relative;
   -webkit-transition: .5s ease-in-out;
@@ -1979,12 +1982,6 @@ button {
 }
 
 @media (max-width: 1300px) {
-  .examplesContent {
-    -ms-grid-columns: 370px 370px;
-        grid-template-columns: 370px 370px;
-    -ms-grid-rows: 370px 370px 370px;
-        grid-template-rows: 370px 370px 370px;
-  }
   .scale1, .scale2, .scale3, .scale4, .scale5, .scale6 {
     -webkit-transform: translateX(0px) scale(1.3);
             transform: translateX(0px) scale(1.3);
@@ -2068,12 +2065,6 @@ button {
 }
 
 @media (max-width: 800px) {
-  .examplesContent {
-    -ms-grid-columns: 370px;
-        grid-template-columns: 370px;
-    -ms-grid-rows: 370px 370px 370px 370px 370px 370px;
-        grid-template-rows: 370px 370px 370px 370px 370px 370px;
-  }
   .moneyContent-item-side-desc {
     font-size: 16px;
   }
@@ -2096,12 +2087,26 @@ button {
 }
 
 @media (max-width: 600px) {
-  .examplesContent {
-    grid-gap: 45px;
-    -ms-grid-columns: 300px;
-        grid-template-columns: 300px;
-    -ms-grid-rows: 300px 300px 300px 300px 300px 300px;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  .scale1, .scale2, .scale3, .scale4, .scale5, .scale6 {
+    -webkit-transform: translateX(0px) scale(1.1);
+            transform: translateX(0px) scale(1.1);
+  }
+  .examplesContent-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 280px;
+            flex: 0 1 280px;
+    height: 280px;
+  }
+  .examplesContent-item-img {
+    width: 280px;
+    height: 280px;
+  }
+  .examplesContent-item-header {
+    font-size: 36px;
+  }
+  .examplesContent-item-wrap-bg {
+    width: 280px;
+    height: 276px;
   }
   .formContent {
     max-width: 240px;
