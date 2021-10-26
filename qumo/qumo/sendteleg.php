@@ -10,8 +10,8 @@ $token = "2092522216:AAEMSA-eJ81xbL-1YRHLdtMTwEPocjWIo-0";
 $chat_id = "-605960171";
 $arr = array(
     'Имя: '=> $name,
-    'Email '=> $email,
-    'Заказ '=> $message
+    'Email: '=> $email,
+    'Заказ: '=> $message
 );
 
 foreach($arr as $key => $value){
