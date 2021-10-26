@@ -275,7 +275,7 @@ p{
 }
 .contein{
     width: 100%;
-    height: 780px;
+    height: 100%;
     background-color: rgba(100, 100, 100, 0.623);
     display: flex;
     align-items: center;
@@ -300,6 +300,9 @@ p{
         color: #c23c3c !important;
     }
 }
+.mb{
+    margin-bottom: 40px;
+}
 .application{
     display: flex;
     flex-direction: column;
@@ -309,8 +312,8 @@ p{
     position: relative;
     border-radius: 20px;
     transform: translateY(-20px);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
     &-btn{
         position: absolute;
         top: 10px;
@@ -354,7 +357,7 @@ input{
     color: #fff;
 }
 .formContent{
-    padding-top: 40px;
+    padding: 40px;
     &-desc{
         display: flex;
         justify-content: space-between;
@@ -368,7 +371,7 @@ input{
             font-size: 20px;
             font-weight: 300;
             outline: none;
-            max-width: 100%;
+            width: 100%;
             &::placeholder{
                 color: rgb(233, 233, 233);
                 font-size: 18px;
@@ -1527,6 +1530,9 @@ button{
     }
 }
 @media (max-width:600px) {
+    .mainDesc-p{
+        font-size: 24px;
+    }
     .scale1, .scale2, .scale3, .scale4, .scale5, .scale6{
         transform: translateX(0px)scale(1.1) ;
     }
