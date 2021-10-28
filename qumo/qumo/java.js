@@ -1,10 +1,7 @@
 $(function(){
 
 
-            const checkTr = () =>{
-                track.width()
-            }
-            setInterval(checkTr, 10);
+
 
             let position = 0;
             
@@ -32,66 +29,85 @@ $(function(){
 
             const moveSlide = slideWidth;
 
+            let onDoc = $(window).width();
+
+            let itemCount = 0;
+
             
-
-            // item.each(function(index, item){
-
-            //     $(item).css({
-            
-            //         'min-width':'1500px'
-            
-            //     });
-            // });
-
-
-
             btnNext.click(function (e) { 
 
                 position -= moveSlide;
-            
-                track.css({
-            
-                    transform:`translateX(${position}px)`
-            
-                });
-            
-                checkBtn();
-                console.log(position);
+
+                itemCount++;
                 
+                if(itemCount === 6){
+                    itemCount=0;   
+                    position = 0;
+                    track.css({
+                        transform:`translateX(0px)`
+                
+                    });
+                }else{
+                    track.css({
+            
+                        transform:`translateX(${position}px)`
+                
+                    });
+                }
+            
+                // checkBtn();
+                console.log(position);
+                console.log(itemCount);
             });
+
             
             btnPrev.click(function (e) { 
-            
-                position += moveSlide;
-            
-                track.css({
-            
-                    transform:`translateX(${position}px)`
-            
-                });
-            
-                checkBtn();
-                console.log(position);
                 
+                position += moveSlide;
+
+                itemCount--;
+
+
+                if(itemCount === -1){
+                    itemCount=5;
+                    position=-5*conteiner.width();
+                    track.css({
+            
+                        transform:`translateX(-${5*onDoc}px)`
+                
+                    });
+                }else{
+    
+                    track.css({
+                        
+                        transform:`translateX(${position}px)`
+                
+                    });
+                }
+                
+            
+                // checkBtn();
+                console.log(position);
+                console.log(itemCount);
             });
             
             // НАЖАТИЕ НА КНОПКУ НАЖАТИЕ НА КНОПКУ НАЖАТИЕ НА КНОПКУ НАЖАТИЕ НА КНОПКУ
             
             // ПРОВЕРКА КНОПКИ ПРОВЕРКА КНОПКИ ПРОВЕРКА КНОПКИ ПРОВЕРКА КНОПКИ
             
-            const checkBtn = () => {
+            // const checkBtn = () => {
             
-                btnNext.prop('disabled',
+            //     btnNext.prop('disabled',
             
-                position <= -(items - slideShow) * slideWidth
+            //     position <= -(items - slideShow) * slideWidth
             
-                );
+            //     );
             
-                btnPrev.prop('disabled', position === 0);
+            //     btnPrev.prop('disabled', position === 0);
             
-            }
+            // }
             
-            checkBtn();
+            // checkBtn();
 
             
 
@@ -307,6 +323,15 @@ $(function(){
                 $('.burgerMenu-vis-ul-btn').click(function (e) { 
                     e.preventDefault();
                     $('.burgerMenu-vis').removeClass('burgerMenuAct');
+                });
+
+                $('.footer-polic').click(function(e){
+                    e.preventDefault();
+                    $('.modal').addClass('modalAct');
+                });
+                $('.footer-btn').click(function(e){
+                    e.preventDefault();
+                    $('.modal').removeClass('modalAct');
                 });
                          
 });
