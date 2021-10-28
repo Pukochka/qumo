@@ -418,7 +418,7 @@ p {
   font-weight: 500;
   line-height: 60px;
   letter-spacing: 1px;
-  max-width: 1010px;
+  max-width: 1100px;
   margin: 0 auto;
   z-index: 60;
   position: relative;
@@ -460,8 +460,8 @@ p {
   position: fixed;
   z-index: 400;
   visibility: hidden;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
   -webkit-transition: .2s ease-in-out transform;
   transition: .2s ease-in-out transform;
   opacity: 0;
@@ -1051,6 +1051,7 @@ button {
 .moneyTrack {
   overflow: hidden;
   position: relative;
+  background: radial-gradient(circle, #b94b98 0%, #ed0739 100%);
 }
 
 .moneyContent {
@@ -1342,7 +1343,7 @@ button {
 .next, .prev {
   outline: none;
   position: absolute;
-  max-width: 600px;
+  width: 65px;
   height: 720px;
   border-radius: 15px;
   background: none;
@@ -2120,9 +2121,6 @@ button {
   .about {
     height: auto;
   }
-  .logotype {
-    height: 240px;
-  }
   nav {
     display: none;
   }
@@ -2174,7 +2172,6 @@ button {
   }
   .priceContent-ul {
     line-height: 35px;
-    padding: 0 10px 0 0;
   }
   .moneyContent-item-our {
     margin-top: 100px;
@@ -2190,9 +2187,23 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .money1, .money2, .money3, .money4, .money5, .money6 {
+    background: none;
+  }
+  .process {
+    height: 1900px;
+  }
 }
 
 @media (max-width: 600px) {
+  .priceContent-ul {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .priceContent-header {
+    font-size: 26px;
+    margin-top: 50px;
+  }
   .mainDesc-p {
     font-size: 24px;
   }
@@ -2241,9 +2252,6 @@ button {
   }
   .price {
     height: auto;
-  }
-  .priceContent-ul {
-    line-height: 29px;
   }
   .priceContent-ul li {
     padding: 10px 0 10px 0;
@@ -2313,6 +2321,9 @@ button {
 }
 
 @media (max-width: 400px) {
+  .footer-p {
+    text-align: center;
+  }
   .examplesHeader-p {
     font-size: 36px;
     text-align: centerh;
