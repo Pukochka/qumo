@@ -1,8 +1,5 @@
 $(function(){
 
-
-
-
             let position = 0;
             
             let slideShow = 1;
